@@ -32,6 +32,9 @@ def split_file_into_qrcodes(filename):
         qr.make(fit=True)
         img = qr.make_image(fill_color="black", back_color="white")
         img.save(f'qrcodes/{index}.png')
+    print(f"{len(chunks)} QR codes gerados e salvos na pasta 'qrcodes'.")
+    print("Para reconstruir o conteúdo, use o modo 'rebuild'.")
+
 
 
 def rebuild_file_from_qrcodes(output_filename):
@@ -52,7 +55,7 @@ def rebuild_file_from_qrcodes(output_filename):
     # Salvando o conteúdo reconstruído como um novo arquivo
     with open(output_filename, 'wb') as f:
         f.write(decoded_content)
-
+    print(f"Conteúdo reconstruído com sucesso e salvo como {output_filename}.")
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
@@ -66,6 +69,7 @@ if __name__ == "__main__":
         split_file_into_qrcodes(filename)
     elif mode == "rebuild":
         rebuild_file_from_qrcodes(filename)
+        print(f'Tamanho do arquivo reconstruído: {os.path.getsize(filename)} bytes')
     else:
         print("Modo inválido. Use 'split' ou 'rebuild'.")
         sys.exit(1)
