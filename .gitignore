@@ -1,3 +1,9 @@
 /abc.zip
 ./.idea
 ./build
+.idea/
+__pycache__/
+build/
+dist/
+hook/__pycache__/
+*.spec
