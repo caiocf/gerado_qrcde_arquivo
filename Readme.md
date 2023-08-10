@@ -57,5 +57,3 @@ A: Sim, mas lembre-se de que arquivos muito grandes resultarão em um grande nú
 Estamos abertos a contribuições! Se você tiver melhorias, correções ou novos recursos, sinta-se à vontade para abrir um pull request.
 
 ---
-
-Você pode fazer o download deste `README.md` revisado e adicioná-lo ao seu repositório. Se você tiver mais ajustes ou perguntas, estou aqui para ajudar!
