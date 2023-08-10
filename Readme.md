@@ -27,7 +27,7 @@ O script fornece dois modos de operação:
 ### Dividir um arquivo em QR Codes:
 
 ```bash
-python main.py split nome_do_arquivo.extensao
+python main.py split meu_arquivo.zip
 ```
 
 Este comando irá criar imagens QR Code no diretório "qrcodes".
@@ -35,7 +35,7 @@ Este comando irá criar imagens QR Code no diretório "qrcodes".
 ### Reconstruir o arquivo a partir dos QR Codes:
 
 ```bash
-python main.py rebuild nome_do_arquivo_reconstruido.extensao
+python main.py rebuild meu_arquivo_remontado.zip
 ```
 
 ## Código
