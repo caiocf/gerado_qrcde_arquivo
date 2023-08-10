@@ -1,7 +1,13 @@
+# Projeto de Divisão e Reconstrução de Arquivos Usando QR Codes
 
-# Projeto: Divisão e Reconstrução de Arquivos Usando QR Codes
+Este projeto oferece uma ferramenta robusta para **divisão de arquivos** e **reconstrução** usando **QR Codes**. Ele permite que os usuários codifiquem arquivos em múltiplos códigos QR e, posteriormente, decodifiquem esses códigos QR para reconstruir o arquivo original.
 
-Este projeto fornece uma ferramenta para dividir um arquivo em vários códigos QR e, posteriormente, reconstruir o arquivo original a partir desses códigos QR.
+## Recursos
+
+- **Divisão de Arquivos**: Converta rapidamente qualquer arquivo em uma série de imagens QR Code.
+- **Reconstrução de Arquivos**: Decodifique uma série de imagens QR Code para reconstruir o arquivo original.
+- **Backup de Arquivos**: Use QR Codes como uma forma alternativa de backup de arquivos.
+- **Leitura de QR Code**: Decodifique facilmente QR Codes para extrair informações do arquivo.
 
 ## Pré-requisitos
 
@@ -17,7 +23,7 @@ Instale as bibliotecas necessárias usando:
 pip install -r requirements.txt
 ```
 
-## Uso
+## Como Usar
 
 O script fornece dois modos de operação:
 
@@ -38,9 +44,18 @@ Este comando irá criar imagens QR Code no diretório "qrcodes".
 python main.py rebuild meu_arquivo_remontado.zip
 ```
 
-## Código
+## FAQ (Perguntas Frequentes)
 
-O código principal é dividido em duas funções principais:
+**Q: O que é a vantagem de usar QR Codes para divisão de arquivos?**  
+A: Usar QR Codes para dividir arquivos oferece uma maneira visual e física de armazenar dados, o que pode ser útil para backups físicos ou compartilhamento rápido.
 
-- `split_file_into_qrcodes(filename)`: Divide o arquivo especificado em vários códigos QR.
-- `rebuild_file_from_qrcodes(output_filename)`: Reconstrói o arquivo original a partir das imagens de QR Code no diretório "qrcodes".
+**Q: Posso usar este projeto para backup de arquivos grandes?**  
+A: Sim, mas lembre-se de que arquivos muito grandes resultarão em um grande número de QR Codes.
+
+## Contribuições
+
+Estamos abertos a contribuições! Se você tiver melhorias, correções ou novos recursos, sinta-se à vontade para abrir um pull request.
+
+---
+
+Você pode fazer o download deste `README.md` revisado e adicioná-lo ao seu repositório. Se você tiver mais ajustes ou perguntas, estou aqui para ajudar!
