@@ -44,6 +44,29 @@ Este comando irá criar imagens QR Code no diretório "qrcodes".
 python main.py rebuild meu_arquivo_remontado.zip
 ```
 
+
+
+Este comando irá criar imagens QR Code no diretório "qrcodes".
+
+### Reconstruir o arquivo a partir dos QR Codes:
+
+```bash
+python main.py rebuild meu_arquivo_remontado.zip
+```
+
+### Geração de Versão Executável para Sistemas Operacionais
+
+Para criar uma versão executável para um sistema operacional específico (Linux, Windows ou Mac), você deve executar o seguinte comando no sistema operacional alvo:
+
+```bash
+pyinstaller --onefile --additional-hooks-dir=hook main.py
+```
+
+Por exemplo Windows:
+```bash
+dist\main.exe split meu_arquivo.zip
+```
+
 ## FAQ (Perguntas Frequentes)
 
 **Q: O que é a vantagem de usar QR Codes para divisão de arquivos?**  
